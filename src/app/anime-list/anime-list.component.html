@@ -1,0 +1,28 @@
+<h1 style="text-align:center;">Top 100 Anime List</h1>
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Title</th>
+        <!-- <th>Synopsis</th> -->
+        <th>Studio</th>
+        <th>Score</th>
+        <th>Poster</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let anime of animeList">
+        <td>{{ anime.animeId  - 10}} </td>
+        <td>{{ anime.animeTitle }}</td>
+        <!-- <td>{{ anime.animeDescription }}</td> -->
+        <td>{{ anime.animeStudio }}</td>
+        <td>{{ anime.rating }}</td>
+        <td>
+          <img src="{{ anime.animeImageUrl }}" alt="" width="150" height="200">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
