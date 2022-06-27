@@ -5,11 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnimeListComponent } from './anime-list/anime-list.component';
+import { AnimeNewComponent } from './anime-new/anime-new.component';
+import { AnimeFetchIdComponent } from './anime-fetch-id/anime-fetch-id.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnimeListComponent
+    AnimeListComponent,
+    AnimeNewComponent,
+    AnimeFetchIdComponent
   ],
   imports: [
     BrowserModule,

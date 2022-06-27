@@ -15,4 +15,12 @@ export class AnimeService {
   public getAnimeList(): Observable<Anime[]> {
     return this.httpClient.get<Anime[]>(this.baseUrl + 'anime');
   }
+
+  public getAnimeById(animeId: number): Observable<Anime>{
+    return this.httpClient.get<Anime>(this.baseUrl + 'anime/${number}');
+  }
+
+  public saveAnime(anime: Anime): Observable<Anime> {
+    return this.httpClient.post<Anime>(this.baseUrl + 'save', Anime);
+  }
 }
