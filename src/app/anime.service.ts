@@ -20,6 +20,10 @@ export class AnimeService {
     return this.httpClient.get<Anime>(this.baseUrl + 'anime/${number}');
   }
 
+  public getAnimeByName(animeName: string): Observable<Anime>{
+    return this.httpClient.get<Anime>(this.baseUrl + 'anime/${string}');
+  }
+
   public saveAnime(anime: Anime): Observable<Anime> {
     return this.httpClient.post<Anime>(this.baseUrl + 'save', Anime);
   }
