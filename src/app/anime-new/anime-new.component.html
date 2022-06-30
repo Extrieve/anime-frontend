@@ -1,1 +1,69 @@
-<p>anime-new works!</p>
+<div class="col-md-6 offset-md-3">
+  <h3> Create Anime Entry</h3>
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" id="animeTitle" placeholder="Anime Title" name="animeTitle"
+        [(ngModel)]="anime.animeTitle" />
+
+    </div>
+
+    <br>
+
+    <div class="form-group">
+      <label>
+        Type
+      </label>
+      <input type="text" class="form-control" id="animeType" placeholder="Last Name" name="animeType"
+        [(ngModel)]="anime.animeType" />
+    </div>
+
+    <br>
+
+    <div class="form-group">
+      <label>
+        Description
+      </label>
+      <input type="text" class="form-control" id="animeDescription" placeholder="animeDescription" name="animeDescription"
+        [(ngModel)]="anime.animeDescription" />
+
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label>
+        Image URL
+      </label>
+      <input type="text" class="form-control" id="animeImageUrl" placeholder="animeImageUrl" name="animeImageUrl"
+        [(ngModel)]="anime.animeImageUrl" />
+
+    </div>
+
+    <br>
+
+    <div class="form-group">
+      <label>
+        Episode Count
+      </label>
+      <input type="text" class="form-control" id="animeEpisodeCount" placeholder="animeEpisodeCount" name="animeEpisodeCount"
+        [(ngModel)]="anime.animeEpisodeCount" />
+
+    </div>
+
+    <br>
+
+    <div class="form-group">
+      <label>
+        Studio
+      </label>
+      <input type="text" class="form-control" id="animeStudio" placeholder="animeStudio" name="animeStudio"
+        [(ngModel)]="anime.animeStudio" />
+
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+
+  </form>
+
+</div>
