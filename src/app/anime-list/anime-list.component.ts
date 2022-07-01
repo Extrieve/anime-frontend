@@ -18,6 +18,10 @@ export class AnimeListComponent implements OnInit {
     this.getAnimeList();
   }
 
+  public onSelect(id: number){
+    this.router.navigate(['/anime/:id', id]);
+  }
+
   public getAnimeList(){
     this.animeService.getAnimeList().subscribe(
       data => {

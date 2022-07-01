@@ -22,6 +22,9 @@
         <td>
           <img src="{{ anime.animeImageUrl }}" alt="" width="150" height="200">
         </td>
+        <td>
+          <button class="btn btn-primary" (click)="onSelect(anime.animeId)">View</button>
+        </td>
       </tr>
     </tbody>
   </table>
