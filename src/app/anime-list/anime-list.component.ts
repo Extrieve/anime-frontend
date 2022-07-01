@@ -19,7 +19,7 @@ export class AnimeListComponent implements OnInit {
   }
 
   public onSelect(id: number){
-    this.router.navigate(['/anime/:id', id]);
+    this.router.navigate(['/anime', id]);
   }
 
   public getAnimeList(){

@@ -17,7 +17,7 @@ export class AnimeService {
   }
 
   public getAnimeById(animeId: number): Observable<Anime>{
-    return this.httpClient.get<Anime>(this.baseUrl + 'anime/${number}');
+    return this.httpClient.get<Anime>(this.baseUrl + 'anime/' + animeId);
   }
 
   public getAnimeByName(animeName: string): Observable<Anime>{
