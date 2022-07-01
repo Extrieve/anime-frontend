@@ -7,8 +7,8 @@ import { AnimeNewComponent } from './anime-new/anime-new.component';
 const routes: Routes = [
   {'path': '', 'redirectTo': 'anime', 'pathMatch': 'full'},
   {'path': 'anime', component : AnimeListComponent},
+  {'path': 'anime/save', component : AnimeNewComponent},
   {'path': 'anime/:id', component : AnimeFetchIdComponent},
-  {'path': 'anime/new', component : AnimeNewComponent}
 ];
 
 @NgModule({

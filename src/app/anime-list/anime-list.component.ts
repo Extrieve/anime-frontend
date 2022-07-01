@@ -31,4 +31,8 @@ export class AnimeListComponent implements OnInit {
     this.router.navigate(['/anime']);
   }
 
+  public goToCreateAnime(){
+    this.router.navigate(['/anime/new']);
+  }
+
 }
