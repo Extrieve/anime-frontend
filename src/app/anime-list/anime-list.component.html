@@ -1,5 +1,15 @@
 <h1 style="text-align:center;">Top 100 Anime List</h1>
 <!-- <button></button> -->
+<!-- Search input field -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <input type="text" class="form-control" id="search" placeholder="Search"
+       name="search" [(ngModel)]="this.title">
+       <button class="btn btn-primary" type="submit" (click)="this.search(this.title)">Search</button>
+       <button class="btn btn-secondary" type="submit" (click)="this.getAnimeList()">Reset</button>
+    </div>
+  </div>
 <div class="container">
   <table class="table table-hover">
     <thead>

@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { AnimeListComponent } from './anime-list/anime-list.component';
 import { AnimeNewComponent } from './anime-new/anime-new.component';
 import { AnimeFetchIdComponent } from './anime-fetch-id/anime-fetch-id.component';
+import { AnimeTitleSearchComponent } from './anime-title-search/anime-title-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimeListComponent,
     AnimeNewComponent,
-    AnimeFetchIdComponent
+    AnimeFetchIdComponent,
+    AnimeTitleSearchComponent
   ],
   imports: [
     BrowserModule,

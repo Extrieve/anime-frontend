@@ -20,8 +20,8 @@ export class AnimeService {
     return this.httpClient.get<Anime>(this.baseUrl + 'anime/' + animeId);
   }
 
-  public getAnimeByName(animeName: string): Observable<Anime>{
-    return this.httpClient.get<Anime>(this.baseUrl + 'anime/${string}');
+  public getAnimeByName(animeName: string): Observable<Anime[]>{
+    return this.httpClient.get<Anime[]>(this.baseUrl + 'search/' + animeName);
   }
 
   public saveAnime(anime: Anime): Observable<Anime> {
